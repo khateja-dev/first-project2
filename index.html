@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Example</title>
+
+  <style>
+    /* Default styles */
+    body {
+      background-color: lightblue;
+      font-size: 18px;
+    }
+
+    /* Media query for screens smaller than 600px */
+    @media (max-width: 600px) {
+      body {
+        background-color: lightcoral;
+        font-size: 16px;
+      }
+    }
+
+    /* Media query for screens larger than 1200px */
+    @media (min-width: 1200px) {
+      body {
+        background-color: lightgreen;
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px)
+     {
+      body {
+        background-color: rgb(139, 128, 240);
+        font-size: 21px;
+      }
+    }
+
+    @media(min-width:100px) and (max-width:200px) {
+        body{
+            background-color: black;
+            color: beige;
+            font-size: 5px;
+            
+        }
+    }
+
+    /* Landscape orientation */
+    @media (orientation: landscape) {
+      body {
+        background-color: orangered;
+        color: darkgreen;
+      }
+    } 
+        
+    
+  </style>
+</head>
+<body>
+  <h1>Hello, Responsive World!</h1>
+  <h1>Rotate your device!</h1>
+  <p>The background changes based on orientation.</p>
+</body>
+</html>

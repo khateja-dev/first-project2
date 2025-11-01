@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      
+      line-height: 1;
+    }
+    header{
+        height: 60px;
+        background-color: rgb(112, 83, 139);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:0 30px;
+    }
+
+    header h1{
+      font-size: 1.8em;
+      letter-spacing:1px ;
+    }
+
+     h2{
+        margin-top: 10px;
+        height: 40px;
+        background-color: rgb(19, 131, 94);
+        color: beige;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        padding-right: 20px;
+        text-align: center;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+   #post {
+  display: flex;
+  justify-content: center;     /* Center content horizontally */
+  align-items: center;         /* Center content vertically */
+  text-align: center;
+
+  width: 400px;
+  height: 100px;
+  background-color: rgb(11, 90, 64);
+  color: white;                /* Text readable on dark background */
+
+  margin: 50px auto;           /* Centers the box horizontally on the page */
+  border-radius: 8px;          /* Optional: smoother corners */
+}
+
+
+    #post-footer{
+        height: 20px;
+        width: 800px;
+        border-left: 10px solid #4caf50;
+        border-right: 10px solid #4caf50;
+        background-color: rgb(61, 65, 63);
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+
+    aside {
+  background-color: #5486d1;
+  
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  border-left: 20px solid #4caf50;
+  border-right: 20px solid #4caf50;
+  padding: 15px 20px;
+  margin: 50px 0;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside h3 {
+  color:white;
+  font-size: 1.4em;
+  margin-bottom: 8px;
+   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+#about-footer {
+  color: white;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+aside:hover {
+  background-color: #3f3c3c;
+  transition: background-color 0.3s ease;
+}
+
+#main-footer{
+  background-color: rgb(11, 129, 90);
+  height: 40px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width: 600px) {
+  header {
+     flex-direction: column;
+     height: auto;
+     padding: 15px;
+     text-align: center;
+
+  }
+  nav{
+    margin-top: 10px;
+  }
+
+ #post,#main-footer{
+  height: auto;
+  width: 100px;
+  /* flex-direction: column; */
+  text-align: center;
+ }
+
+ #post-footer{
+  height: auto;
+   width: 100px;
+  /* flex-direction: column; */
+  text-align: center;
+ }
+}
+
+@media (max-width: 800px) {
+  header {
+     flex-direction: column;
+     height: auto;
+     padding: 15px;
+     text-align: center;
+
+  }
+  nav{
+    margin-top: 10px;
+  }
+
+ #post,#main-footer{
+  height: auto;
+  width: 100px;
+  flex-direction: column;
+  text-align: center;
+ }
+
+ #post-footer{
+  height: auto;
+   width: 100px;
+  flex-direction: column;
+  text-align: center;
+ }
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+        <h2>Welcome!</h2>
+      <p id="post">This is my first post. I'm learning HTML!</p>
+      <footer>
+        <p id="post-footer">Posted by Jane on October 27, 2025</p>
+      </footer>
+    </article>
+  </main>
+
+    <aside>
+      <h3>About Me</h3>
+      <p id="about-footer">I'm Jane, a beginner web developer sharing my learning journey.</p>
+    </aside>
+
+  <footer>
+    <p id="main-footer">&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>

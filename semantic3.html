@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    /* ====== General Reset & Base ====== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ====== Header ====== */
+    header {
+      background-color: #70538b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      height: 70px;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #b2f7e2;
+    }
+
+    /* ====== Article / Main Content ====== */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      background-color: #13835e;
+      color: beige;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 25px;
+    }
+
+    #post {
+      background-color: #0b5a40;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      transition: transform 0.2s ease;
+    }
+
+    #post:hover {
+      transform: translateY(-3px);
+    }
+
+    #post-footer {
+      background-color: #3d413f;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+      border-left: 8px solid #4caf50;
+      border-right: 8px solid #4caf50;
+    }
+
+    /* ====== Aside (About Section) ====== */
+    aside {
+      background-color: #5486d1;
+      color: white;
+      padding: 25px 30px;
+      margin: 50px auto;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+      border-left: 10px solid #4caf50;
+      transition: all 0.3s ease;
+    }
+
+    aside:hover {
+      background-color: #456eb3;
+      transform: translateY(-3px);
+    }
+
+    aside h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      padding-bottom: 5px;
+    }
+
+    #about-footer {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+
+    /* ====== Main Footer ====== */
+    #main-footer {
+      background-color: #0b815a;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.95em;
+      letter-spacing: 0.5px;
+    }
+
+    /* ====== Responsive Design ====== */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      #post, aside {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Welcome!</h2>
+      <p id="post">This is my first post. I'm learning HTML!</p>
+      <footer>
+        <p id="post-footer">Posted by Jane on October 27, 2025</p>
+      </footer>
+    </article>
+  </main>
+
+  <aside>
+    <h3>About Me</h3>
+    <p id="about-footer">I'm Jane, a beginner web developer sharing my learning journey.</p>
+  </aside>
+
+  <footer>
+    <p id="main-footer">&copy; 2025 My Website</p>
+  </footer>
+</body>
+</html>
